@@ -1,5 +1,4 @@
 import json
-import streamlit_lottie
 from PIL import Image
 import streamlit as st
 def load_lottiefile(filepath):
