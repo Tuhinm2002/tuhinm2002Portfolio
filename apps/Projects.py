@@ -7,7 +7,7 @@ def load_lottiefile(filepath):
 def app():
     # st.write("https://ml-drug-sars.onrender.com")
     st.title("Tuhin's Projects")
-    lottie_coding = load_lottiefile(r"apps\animation_project.json")
+    lottie_coding = load_lottiefile("animation_project.json")
     st.lottie(lottie_coding, loop=True)
     col1,col2 = st.columns(2)
     col3,col4 = st.columns(2)

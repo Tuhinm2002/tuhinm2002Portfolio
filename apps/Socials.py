@@ -8,7 +8,7 @@ def load_lottiefile(filepath):
 
 def app():
     st.title("Tuhin's Coding Accounts")
-    lottie_coding = load_lottiefile(r"apps\social.json")
+    lottie_coding = load_lottiefile("social.json")
     st.lottie(lottie_coding, loop=True)
     col1, col2 = st.columns(2)
     col3, col4 = st.columns(2)

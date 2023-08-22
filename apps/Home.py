@@ -10,7 +10,7 @@ def app():
 	st.write("")
 	st.write("")
 	st.write("")
-	lottie_coding = load_lottiefile(r"apps\first_comp.json")
+	lottie_coding = load_lottiefile("first_comp.json")
 	st.lottie(lottie_coding,loop=True)
 	st.write("### Hey there, whoever viewing this pleasure to meet you"
 			 "😊🤓🤗")
