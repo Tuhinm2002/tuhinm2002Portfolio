@@ -1,11 +1,6 @@
 import streamlit as st
 import json
-import base64
-try:
-    import streamlit_lottie
-except:
-    pass
-
+import streamlit_lottie
 def load_lottiefile(filepath):
 	with open(filepath, "r") as f:
 		return json.load(f)
@@ -13,7 +8,7 @@ def load_lottiefile(filepath):
 def app():
     st.title("Tuhin's Coding Accounts")
     lottie_coding = load_lottiefile("social.json")
-    st.lottie(lottie_coding, loop=True)
+    streamlit_lottie.st_lottie(lottie_coding, loop=True)
     col1, col2 = st.columns(2)
     col3, col4 = st.columns(2)
     with col1:

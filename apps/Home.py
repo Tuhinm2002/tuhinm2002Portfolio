@@ -1,9 +1,6 @@
 import streamlit as st
 import json
-try:
-	import streamlit_lottie
-except:
-	pass
+import streamlit_lottie
 
 def load_lottiefile(filepath):
 	with open(filepath, "r") as f:
@@ -14,7 +11,7 @@ def app():
 	st.write("")
 	st.write("")
 	lottie_coding = load_lottiefile("first_comp.json")
-	st.lottie(lottie_coding,loop=True)
+	streamlit_lottie.st_lottie(lottie_coding,loop=True)
 	st.write("### Hey there, whoever viewing this pleasure to meet you"
 			 "😊🤓🤗")
 	st.write("")

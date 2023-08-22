@@ -1,10 +1,7 @@
 import json
 from PIL import Image
 import streamlit as st
-try:
-    import streamlit_lottie
-except:
-    pass
+import streamlit_lottie
 def load_lottiefile(filepath):
 	with open(filepath, "r") as f:
 		return json.load(f)
@@ -12,7 +9,7 @@ def app():
     # st.write("https://ml-drug-sars.onrender.com")
     st.title("Tuhin's Projects")
     lottie_coding = load_lottiefile("animation_project.json")
-    st.lottie(lottie_coding, loop=True)
+    streamlit_lottie.st_lottie(lottie_coding, loop=True)
     col1,col2 = st.columns(2)
     col3,col4 = st.columns(2)
     with col1:
