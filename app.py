@@ -1,6 +1,7 @@
 import streamlit as st
 from Multiapp import Multipage
 from apps import Home,Projects,Coding,Socials
+import streamlit_lottie
 
 
 def apps():
