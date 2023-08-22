@@ -1,6 +1,6 @@
 import streamlit as st
 import json
-
+import streamlit_lottie
 
 def load_lottiefile(filepath):
 	with open(filepath, "r") as f:
