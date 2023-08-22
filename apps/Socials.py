@@ -1,4 +1,3 @@
-import streamlit_lottie
 import streamlit as st
 import json
 import base64
