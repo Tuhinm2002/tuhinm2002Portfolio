@@ -1,7 +1,10 @@
 import streamlit as st
 import json
 import base64
-import streamlit_lottie
+try:
+    import streamlit_lottie
+except:
+    pass
 
 def load_lottiefile(filepath):
 	with open(filepath, "r") as f:

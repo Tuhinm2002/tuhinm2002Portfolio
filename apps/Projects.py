@@ -1,7 +1,10 @@
 import json
 from PIL import Image
 import streamlit as st
-import streamlit_lottie
+try:
+    import streamlit_lottie
+except:
+    pass
 def load_lottiefile(filepath):
 	with open(filepath, "r") as f:
 		return json.load(f)
